@@ -1,4 +1,4 @@
-name: Developer_Branch_CI
+name: Developer_Branch_CI_frontend
 on:
  push:
   branches:
