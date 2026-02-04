@@ -1,24 +1,9 @@
-name: Developer_Branch_CI
+name: Release_Tags
 on:
  push:
   tags:
     - "v*"
 jobs:
   CI_Steps:
-    runs-on: self-hosted
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: SAST Scans
-        run: echo Running SAST Scans
-
-      - name: SCA Scans
-        run: echo Running SCA Scans
-
-      - name: Detect Secrets in source code
-        run: echo Detecting Secrets in source code
-
-      - name: Produce Artifacts
-        run: echo Producing Artifacts
+    uses: krndevops/github-actions/.github/workflows/Release_Tags.yml@main
 
