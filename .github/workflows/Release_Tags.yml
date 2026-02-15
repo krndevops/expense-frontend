@@ -3,6 +3,10 @@ on:
  push:
   tags:
     - "v*"
+
+env:
+  service_name: expense-frontend
+
 jobs:
   CI_Steps:
     uses: krndevops/github-actions/.github/workflows/Release_Tags.yml@main
