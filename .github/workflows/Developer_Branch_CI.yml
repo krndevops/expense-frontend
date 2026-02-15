@@ -5,9 +5,12 @@ on:
    - 'XPNS-*'
 
 env:
-  service_name: expense-frontend
+ service_name: expense-frontend
 
 jobs:
-  CI_Steps:
-    uses: krndevops/github-actions/.github/workflows/Developer_Branch_CI.yml@main
+ CI_Steps:
+  uses: krndevops/github-actions/.github/workflows/Developer_Branch_CI.yml@main
+  secrets: inherit
+  with:
+   service_name: expense-frontend
 
