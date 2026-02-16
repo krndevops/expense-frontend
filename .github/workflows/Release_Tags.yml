@@ -10,6 +10,7 @@ env:
 jobs:
   CI_Steps:
     uses: krndevops/github-actions/.github/workflows/Release_Tags.yml@main
+    secrets: inherit
     with:
       service_name: expense-frontend
 
