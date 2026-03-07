@@ -2,7 +2,7 @@ name: Release_Tags
 on:
   push:
     tags:
-      - "v*"
+      - "*"
 
 env:
   service_name: expense-frontend
